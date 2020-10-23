@@ -41,7 +41,7 @@ def histogram_sign(sentence):
 	amount = []
 	for i in sign_list: 	# Amount of every sign
 		amount.append(sentence.count(i))
-	x_range = np.arange(len(sign_list)
+	x_range = np.arange(len(sign_list))
 	plt.bar(x_range, amount, facecolor = 'black', edgecolor = 'grey')
 	plt.xticks(x_range, sign_list)
 	for i in range(0, len(sign_list)):
