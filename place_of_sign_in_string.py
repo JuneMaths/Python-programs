@@ -1,13 +1,20 @@
-# The program find a position of any sign in a string from given position to given position. 
-# It starts counting from 0.
+# The program finds a position of any sign in a sentence. 
+# It returns a number of the sign in the sentence and positions of the sign.
+# It plots histogram of numbers of every signs in the sentence. 
+
+# Example of a sentence:
+# Jeżeli powiecie dorosłym: "Dowodem istnienia Małego Księcia jest to, że był śliczny, że śmiał się i że chciał mieć baranka, a jeżeli chce się mieć baranka, to dowód, że się istnieje" - wówczas wzruszą ramionami i potraktują was jak dzieci. Lecz jeżeli im powiecie, że przybył z planety B-612, uwierzą i nie będą zadawać niemądrych pytań. Oni są właśnie tacy. Nie można od nich za dużo wymagać. Dzieci muszą być bardzo pobłażliwe w stosunku do dorosłych. 
+
 import matplotlib.pyplot as plt
 import numpy as np
 
-def find_the_sign(start, end, number, x, sentence):
+
+def find_the_sign(x, sentence):
 	''' The function...
 	'''
+	number = 0
 	sign_position = []
-	for i in range (start, end+1):	# for don't take the last iteration
+	for i in range (len(sentence)):	# for don't take the last iteration
 		if  sentence[i] == x:
 			sign_position.append(i)	# Saving position of the sign counting from 0
 			number = number + 1		# Counting how many signs were found
@@ -28,7 +35,6 @@ def find_the_sign(start, end, number, x, sentence):
 def histogram_sign(sentence):
 	''' The function...
 	'''
-	print(sentence)
 	sign_list = []
 	for i in sentence:	# Filters existing signs
 		if i not in sign_list:
@@ -39,13 +45,14 @@ def histogram_sign(sentence):
 	plt.bar( np.arange(len(sign_list)),amount, facecolor='black', edgecolor='grey')
 	plt.xticks(np.arange(len(sign_list)), sign_list)
 	for i in range(0, len(sign_list)):
-		plt.text(i, amount[i]+0.08, str(amount[i]))
+		plt.text(i -0.25, amount[i]+0.05*max(amount), str(amount[i]))
 	plt.title('Histogram of signs in sentence')
 	plt.xlabel('sign')
 	plt.ylabel('number of sign')
+	plt.ylim([0, max(amount)+0.15 * max(amount)])
 	plt.show()
 	
-		
+	
 sentence = input('Enter the selected string: ')
 sentence = sentence.lower()
 
@@ -54,22 +61,9 @@ if length >= 0:			# Sentence have to be entered
 	x = input('Enter the sign you are looking for: ')
 	x = x.lower()
 	if len(x) == 1:		# It should be only one sign
-		number = 0
-		print('The scope of search is from 0 to', length)
-		try:
-			start = int(input('Enter the position where you want to start searching: '))
-			end = int(input('Enter the position where you want to end searching: '))		
-		except:
-			raise TypeError('you should enter an integer')
-
-		# Main condition and mechanism
-		if start <= end and end <= length and start >= 0: # 0 <= start <= end <= length
-			find_the_sign(start, end, number, x, sentence)
-			histogram_sign(sentence)
-		else:
-			raise ValueError('you are out of scale')
+		find_the_sign(x, sentence)
+		histogram_sign(sentence)
 	else:
 		raise ValueError('you can enter only one sign')	
 else:
 	raise ValueError('you should enter a sentence')
-	
