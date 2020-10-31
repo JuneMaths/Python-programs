@@ -11,3 +11,7 @@ Jeżeli powiecie dorosłym: "Dowodem istnienia Małego Księcia jest to, że by�
 
 ![Output Histogram](little_prince_sign_histogram.PNG)
 
+# [Program 2: Oblique projectile motion without air resistance](https://github.com/JuneMaths/Python-programs/blob/main/oblique_projectile_motion.py)
+The program calculate a trajectory of oblique projectile motion without air resistance. The model takes into account change of the gravity depending on the change in height. It plots the result on the graph and returns the falling time, maximum height and the throw range.
+
+![Output Histogram](oblique_projectile_motion.PNG)
