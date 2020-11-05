@@ -17,5 +17,6 @@ The program calculate a trajectory of oblique projectile motion without air resi
 ![Output Histogram](oblique_projectile_motion.PNG)
 
 # [Program 3: Disks board](https://github.com/JuneMaths/Python-programs/tree/main/Disks_board)
+The program draws 100 random disks of the same radius on a 15x15 board. It checks if there is any collision between two disks. If the answer is true. It moves a disk, changes it's color and checks again. 
 
 ![Output Histogram](disks_100.PNG)
