@@ -1,9 +1,10 @@
 # Python-programs
 There are some simple programs written in Python.
 
-# [Program 1: Exchange rate converter]
-Exchange rate converter
+# [Program 1: Exchange rate converter](https://github.com/JuneMaths/Python-programs/blob/main/NBP_converter/nbp_converter.py)
+The program helps to calculate currency exchange. This displays the gui window where you can calculate the final amount after entering all the values. It retrieves current data from the website of the Polish National Bank (NBP)
 
+![NBP gui](nbp_converter.JPG)
 
 # [Program 2: Position in the text](https://github.com/J-data/Python-programs/blob/main/place_of_sign_in_string.py)
 The program finds a position of any sign in a sentence. 
@@ -18,9 +19,9 @@ Jeżeli powiecie dorosłym: "Dowodem istnienia Małego Księcia jest to, że by�
 # [Program 3: Oblique projectile motion without air resistance](https://github.com/JuneMaths/Python-programs/blob/main/oblique_projectile_motion.py)
 The program calculate a trajectory of oblique projectile motion without air resistance. The model takes into account change of the gravity depending on the change in height. It plots the result on the graph and returns the falling time, maximum height and the throw range.
 
-![Output Histogram](oblique_projectile_motion.PNG)
+![Trajectory chart](oblique_projectile_motion.PNG)
 
 # [Program 4: Disks board](https://github.com/JuneMaths/Python-programs/tree/main/Disks_board)
 The program draws 100 random disks of the same radius on a 15x15 board. It checks if there is any collision between two disks. If the answer is true. It moves a disk, changes it's color and checks again. 
 
-![Output Histogram](disks_100.PNG)
+![Disks board](disks_100.PNG)
