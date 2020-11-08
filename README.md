@@ -6,7 +6,12 @@ The program helps to calculate currency exchange. This displays the gui window w
 
 ![NBP gui](nbp_converter.JPG)
 
-# [Program 2: Position in the text](https://github.com/J-data/Python-programs/blob/main/place_of_sign_in_string.py)
+# [Program 2: Winnie the Pooh Game](https://github.com/JuneMaths/Python-programs/blob/main/Game%20Winnie%20the%20Pooh/game.py)
+The game is about...
+
+![Game board](game_board.PNG)
+
+# [Program 3: Position in the text](https://github.com/J-data/Python-programs/blob/main/place_of_sign_in_string.py)
 The program finds a position of any sign in a sentence. 
 It returns a number of the sign in the sentence and positions of the sign.
 It plots histogram of numbers of every signs in the sentence. 
@@ -16,12 +21,12 @@ Jeżeli powiecie dorosłym: "Dowodem istnienia Małego Księcia jest to, że by�
 
 ![Output Histogram](little_prince_sign_histogram.PNG)
 
-# [Program 3: Oblique projectile motion without air resistance](https://github.com/JuneMaths/Python-programs/blob/main/oblique_projectile_motion.py)
+# [Program 4: Oblique projectile motion without air resistance](https://github.com/JuneMaths/Python-programs/blob/main/oblique_projectile_motion.py)
 The program calculate a trajectory of oblique projectile motion without air resistance. The model takes into account change of the gravity depending on the change in height. It plots the result on the graph and returns the falling time, maximum height and the throw range.
 
 ![Trajectory chart](oblique_projectile_motion.PNG)
 
-# [Program 4: Disks board](https://github.com/JuneMaths/Python-programs/tree/main/Disks_board)
+# [Program 5: Disks board](https://github.com/JuneMaths/Python-programs/tree/main/Disks_board)
 The program draws 100 random disks of the same radius on a 15x15 board. It checks if there is any collision between two disks. If the answer is true. It moves a disk, changes it's color and checks again. 
 
 ![Disks board](disks_100.PNG)
