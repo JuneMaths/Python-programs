@@ -10,7 +10,7 @@ import tkinter.ttk as ttk
 try:
 	web = True
 	local_filename, headers = urllib.request.urlretrieve(r'http://www.nbp.pl/kursy/xml/LastA.xml', # strona www.nbp.pl
-			r'C:\Users\JULIET\Desktop\future\NBP_calculator\the_last_rate.xml') # path to ostatni.xml
+			r'C:\Users\*\NBP_converter\the_last_rate.xml') # path to file
 	with open(local_filename) as file:
 		tree = ET.parse(file) #tworze z niego drzewo
 		root = tree.getroot() #czytam drzewo i zapisuję uchwyt
@@ -48,7 +48,7 @@ class NBP:
 		'''funkcja projektuje okno do conventera walut'''
 		self.DATA = DATA	#DATA globalne
 		
-		self.lc1 = Label(master, text = 'TARGET CURRENCY:', bg = 'paleturquoise')
+		self.lc1 = Label(master, text = 'TARGET CURRENCY:', bg = '#B0B6BA', fg = '#000000')
 		self.lc1.grid(row = 1, column = 1, )
 		self.chosen1 = StringVar()
 		self.c1 = ttk.Combobox(master, width = 30, textvariable = self.chosen1)
@@ -59,7 +59,7 @@ class NBP:
 		self.c1.current(0)	#domyślny pierwszy argument
 		self.c1.grid(row = 2, column = 1, padx = 20)
 			
-		self.lc1 = Label(master, text = 'SOURCE CURRENCY:', bg = 'paleturquoise')
+		self.lc1 = Label(master, text = 'SOURCE CURRENCY:', bg = '#B0B6BA',fg = '#000000')
 		self.lc1.grid(row = 3, column = 1)
 		self.chosen2 = StringVar()
 		self.c2 = ttk.Combobox(master, width = 30, textvariable = self.chosen2)	#width-szerokość okna
@@ -70,26 +70,26 @@ class NBP:
 		self.c2.current(0)
 		self.c2.grid(row = 4, column = 1, padx = 20)	#padx-odstęp w poziomie
 
-		self.l1 = Label(master, text = 'AMOUNT TO CONVERT:', bg = 'paleturquoise')
+		self.l1 = Label(master, text = 'AMOUNT TO CONVERT:', bg = '#B0B6BA',fg = '#000000')
 		self.l1.grid(row = 5, column = 1)	
 		self.e1 = Entry(master, width = 30)
 		self.e1.grid(row = 6, column = 1)
 
-		self.l2 = Label(master, text = 'RESULT:', font = ('bold'), fg = 'darkgreen', bg = 'paleturquoise')
+		self.l2 = Label(master, text = 'RESULT:', font = ('bold'), fg = '#000000', bg = '#B0B6BA')
 		self.l2.grid(row = 4, column = 5)
-		self.l3 = Label(master, text = '', font = ('bold'), fg = 'darkgreen', bg = 'paleturquoise')
+		self.l3 = Label(master, text = '', font = ('bold'), fg = '#000000', bg = '#B0B6BA')
 		self.l3.grid(row = 5,column=5)
 				
-		self.b1 = Button(master, text = 'CONVERT', command=self.przelicz, bg = 'mediumaquamarine')
+		self.b1 = Button(master, text = 'CONVERT', command=self.przelicz, bg = '#91D3FF')
 		self.b1.grid(row = 8, column = 1, padx = 20, pady = 20)	#pady-odstęp w pionie
 			
-		self.l5 = Label(master, text = '', fg = 'crimson', bg = 'paleturquoise') #Błąd
+		self.l5 = Label(master, text = '', fg = 'crimson', bg = '#B0B6BA') #Błąd
 		self.l5.grid(row = 7, column = 1)
 
-		self.l4 = Label(master, text = 'QUOTATION DATE: ' + str(filetime), fg = 'seagreen', bg = 'paleturquoise')
+		self.l4 = Label(master, text = 'QUOTATION DATE: ' + str(filetime), fg = '#000000', bg = '#B0B6BA')
 		self.l4.grid(row = 1, column = 5, padx = 20)
 
-		self.btn = Button(master, text = "QUIT", command = quit, bg = 'mediumaquamarine')
+		self.btn = Button(master, text = "QUIT", command = quit, bg = '#91D3FF')
 		self.btn.grid(row = 8, column = 5, padx = 10, pady = 10)
 
 
@@ -132,6 +132,6 @@ if __name__ == "__main__":
 	window = Tk()
 	window.title('exchange rate converter')#tytuł okna
 	window.geometry('+550+300')	#miejsce gdzie się pojawia okno
-	window.configure(bg = 'paleturquoise') 	#tło okna
+	window.configure(bg = '#B0B6BA') 	#tło okna
 	n = NBP(window, DATA, CODE)
 	window.mainloop() #pętla zdarzeń
