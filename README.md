@@ -8,7 +8,7 @@ The program helps to calculate currency exchange. This displays the gui window w
 
 # [Program 2: Winnie the Pooh Game](https://github.com/JuneMaths/Python-programs/blob/main/Game%20Winnie%20the%20Pooh/game.py)
 The goal of the game is to help the always hungry Winnie the Pooh get more and more honey. However, you have to watch out for the bees and avoid them during the flight. 
-You score points for each honey you caught and lives are deducted for each hit bee. You only have three lives. 
+You score points for each honey you caught (The number of points earn: the amount of honey collected * the number of lives left) and lives are deducted for each hit bee. You only have three lives. 
 If you run out of lives in the game and you managed to beat the record, your score is saved in the file with the highest scores.
 
 ![Game board](game_board.PNG)
