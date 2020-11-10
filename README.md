@@ -1,5 +1,5 @@
 # Python-programs
-There are some simple programs written in Python.
+Here are some simple programs written in Python.
 
 # [Program 1: Exchange rate converter](https://github.com/JuneMaths/Python-programs/blob/main/NBP_converter/nbp_converter.py)
 The program helps to calculate currency exchange. This displays the gui window where you can calculate the final amount after entering all the values. It retrieves current data from the website of the Polish National Bank (NBP)
@@ -7,7 +7,9 @@ The program helps to calculate currency exchange. This displays the gui window w
 ![NBP gui](nbp_converter.JPG)
 
 # [Program 2: Winnie the Pooh Game](https://github.com/JuneMaths/Python-programs/blob/main/Game%20Winnie%20the%20Pooh/game.py)
-The game is about...
+The goal of the game is to help the always hungry Winnie the Pooh get more and more honey. However, you have to watch out for the bees and avoid them during the flight. 
+You score points for each honey you caught and lives are deducted for each hit bee. You only have three lives. 
+If you run out of lives in the game and you managed to beat the record, your score is saved in the file with the highest scores.
 
 ![Game board](game_board.PNG)
 
