@@ -1,5 +1,4 @@
 # Python-programs
-Here are some simple programs written in Python.
 
 # [Program 1: Exchange rate converter](https://github.com/JuneMaths/Python-programs/blob/main/NBP_converter/nbp_converter.py)
 The program helps to calculate currency exchange. This displays the gui window where you can calculate the final amount after entering all the values. It retrieves current data from the website of the Polish National Bank (NBP)
