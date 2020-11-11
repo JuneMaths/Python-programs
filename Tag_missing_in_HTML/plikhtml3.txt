@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+     <!-- MISSING '/' in footer tag-->
+     <head>
+          <meta charset="UTF-8"/>
+          <title>Tytuł strony...</title>
+     </head>
+     <body>
+          <header id='nic'>
+               Nagłówek
+          </header>
+          <nav>
+               Menu główne
+		<a href="http://adres-strony">Klik </a>
+          </nav>
+          <section calss='no'>
+               <article>
+                    Zawartość <br> artykułu
+		    <img src="sgw.jpg" border="x">
+               </article>
+          </section>
+          <aside>
+               Kolumna boczna
+          </aside>
+          <footer>
+               Stopka
+          <footer>
+     </body>
+</html>
