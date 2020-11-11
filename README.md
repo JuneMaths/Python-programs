@@ -14,7 +14,7 @@ Statistically we are more willing to choose cash register, because self-checkout
 
 ![Queue](queue.PNG)
 
-We can notice that avarage time the customer spends in waiting queue for both cash register and self-checkout is less than 3 minutes which is not too much. But if we consider that Rossmann ususally reduce prices twice a year our model isn't right. In that time number of customers incrise to 1 client in 45 seconds. 
+We can notice that avarage time the customer spends in waiting queue for both cash register and self-checkout is less than 2 minutes which is not too much. But if we consider that Rossmann ususally reduce prices twice a year our model isn't right. In that time number of customers incrise to 1 client in 45 seconds. 
 
 After applying this model we can notice that there are too many customes to serve left. And waiting time in queue incrises to around 8 minutes. In conlusion the shop sholud add a cashier diuring this time or sholud buy additional self-checkout.
 
