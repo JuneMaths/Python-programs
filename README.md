@@ -30,12 +30,17 @@ If you run out of lives in the game and you managed to beat the record, your sco
 
 ![Game board](game_board.PNG)
 
-# [Program 4: Missing tag in HTML file](https://github.com/JuneMaths/Python-programs/blob/main/Tag_missing_in_HTML/HTML_tags_missing.py)
+# [Program 4: Fraction class](https://github.com/JuneMaths/Python-programs/blob/main/Fraction/main_test.py)
+Fraction class was created to represent fractions. The fraction is represented as irreducible. If there is negative denominator, the whole fraction is negative. The class allows to perform basic mathematics operations. Two fractions can be compared with each other. Numerator and denominator can be checked. Fraction can be also performed as decimal fraction. 
+	
+![Fraction test](fractiontest.PNG)
+
+# [Program 5: Missing tag in HTML file](https://github.com/JuneMaths/Python-programs/blob/main/Tag_missing_in_HTML/HTML_tags_missing.py)
 The function checks the syntax of the HTML document for missing closing tags. It takes one argument which is HTML file and return True if program is correct or False if there is a missing tag.
 
 ![Output Html](html.PNG)
 
-# [Program 5: Position in the text](https://github.com/J-data/Python-programs/blob/main/place_of_sign_in_string.py)
+# [Program 6: Position in the text](https://github.com/J-data/Python-programs/blob/main/place_of_sign_in_string.py)
 The program finds a position of any sign in a sentence. 
 It returns a number of the sign in the sentence and positions of the sign.
 It plots histogram of numbers of every signs in the sentence. 
@@ -45,12 +50,12 @@ Jeżeli powiecie dorosłym: "Dowodem istnienia Małego Księcia jest to, że by�
 
 ![Output Histogram](little_prince_sign_histogram.PNG)
 
-# [Program 6: Oblique projectile motion without air resistance](https://github.com/JuneMaths/Python-programs/blob/main/oblique_projectile_motion.py)
+# [Program 7: Oblique projectile motion without air resistance](https://github.com/JuneMaths/Python-programs/blob/main/oblique_projectile_motion.py)
 The program calculate a trajectory of oblique projectile motion without air resistance. The model takes into account change of the gravity depending on the change in height. It plots the result on the graph and returns the falling time, maximum height and the throw range.
 
 ![Trajectory chart](oblique_projectile_motion.PNG)
 
-# [Program 7: Disks board](https://github.com/JuneMaths/Python-programs/tree/main/Disks_board)
+# [Program 8: Disks board](https://github.com/JuneMaths/Python-programs/tree/main/Disks_board)
 The program draws 100 random disks of the same radius on a 15x15 board. It checks if there is any collision between two disks. If the answer is true. It moves a disk, changes it's color and checks again. 
 
 ![Disks board](disks_100.PNG)
