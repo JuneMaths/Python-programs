@@ -1,0 +1,60 @@
+from Fractionclass import Fraction	
+
+print('1. Mathematical operations test:')
+f1 = Fraction(-1, -4)
+print('f1 =', f1)
+f2 = Fraction(8, -16) # the fraction is represented as irreducible
+print('f2 =', f2)
+print('f1 + f2 =', f1 + f2)
+print('f1 - f2 =', f1 - f2)
+print('f1 * f2 =', f1 * f2)
+print('f1 / f2 =', f1 / f2)
+print('-f1 + f2 =', -f1 + f2)
+print('-f1 - f2 =', -f1 - f2)
+print('f1 * (-f2) =', f1 * (-f2))
+print('f1 / (-f2) =', f1 / (-f2))
+
+print('2. Comparison methods test:')
+f3 = Fraction(1, 4)
+print('f3 =', f3)
+f4 = Fraction(1, 2)
+print('f4 =', f4)
+f5 = Fraction(-2, 8)
+print('f5 =', f5)
+print('f3 == f4 :', f3 == f4)
+print('f3 == f5 :', f3 == f5)	
+print('f3 >= f4 :', f3 >= f4)
+print('f3 <= f5 :', f3 <= f5)
+print('f3 < f4 :', f3 < f4)
+print('f3 > f5 :', f3 > f5)
+print('f3 != f5 :', f3 != f5)
+print('f3 == -f4 :', f3 == -f4)
+print('-f3 == f5 :', -f3 == f5)	
+print('f3 >= -f4 :', f3 >= -f4)
+print('f3 <= -f5 :', f3 <= -f5)
+print('-f3 < f4 :', -f3 < f4)
+print('-f3 > f5 :', -f3 > f5)
+print('-f3 < f5 :', -f3 < f5)  
+print('-f3 != f5 :', -f3 != f5)
+
+print('3. Get the numerator and the denominator test:')
+f6 = Fraction(1, -4) # negative denominator = negative fraction
+print('f6 =', f6)
+print('f6.getNum() :', f6.getNum())
+print('f6.getDem() :', f6.getDem())
+f7 = Fraction(3, 9)	
+print('f7 =', f7)
+print('f7.getNum() :', f7.getNum())
+print('f7.getDem() :', f7.getDem())
+
+
+print("4. Default fraction and decimal fraction test:")
+f8 = Fraction()
+print('default fraction =', f8)
+f9 = Fraction(4, 5)		# Changing fraction into decimal fraction
+print('decimal f9 =', f9, ':', f9.decimal())
+
+# Exceptions
+# f10 = Fraction(1, 4.4)
+# f11 = Fraction(1.3, 7)
+# f12 = Fraction(3, 0)
