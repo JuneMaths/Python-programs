@@ -2,7 +2,7 @@
 
 # [Program 1: Drugstore Simulation](https://github.com/JuneMaths/Python-programs/blob/main/Drugstore_queue_simulation/Drugstore_queue_simulation.py)
 
-Let's assume that we are in a Rossmann. There are two opportunities. You can pay in cash register or in self-checkout. Clients come to the shop and get products. In average one customer takes from 1 to 15 products. There is only one queue to both checkout desks. If one of them is avaiable, customer comes and pay. In average in rush hours (15.00-18.00) there is around 60 peopole per hour which gives 1 person per 60 second.
+In the Drugstore (e.g Rossmann) you can pay in cash register or in self-checkout. Clients come to the shop and get products. In average one customer takes from 1 to 15 products. There is only one queue to both checkout desks. If one of them is avaiable, customer comes and pay. In average in rush hours (15.00-18.00) there is around 60 peopole per hour which gives 1 person per 60 second.
 
 - In cash register paying takes 60 seconds and 1 product per 3 second. 
 (paying time + [getting product, beep, puting product]). 
@@ -10,7 +10,8 @@ Let's assume that we are in a Rossmann. There are two opportunities. You can pay
 - In self-checkout paying takes 80 seconds and 1 product per 4 second. 
 (paying time + [getting product, looking for barcode, beep, putting product]) 
 
-Statistically we are more willing to choose cash register, because self-checkout is still unknown technology for most of people. What is the averge time of waiting to pay? Is it necessary to buy a new self-checkout or employ new cashier?
+Statistically we are more willing to choose cash register, because self-checkout is still unknown technology for most of people. 
+What is the averge time of waiting to pay? Is it necessary to buy a new self-checkout or employ new cashier?
 
 ![Queue](queue.PNG)
 
